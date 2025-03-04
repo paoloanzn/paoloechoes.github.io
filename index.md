@@ -1,1 +1,1 @@
-slightly elaborate ideas of mine
+slightly elaborate ideas of mine.
