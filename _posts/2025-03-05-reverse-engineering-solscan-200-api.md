@@ -8,7 +8,7 @@ GitHub code at the end.
 
 For those who don't know, this is what [solscan.io](https://solscan.io/) looks like:
 
-![Solscan Screenshot](../assets/solscan-screenshot-1.jpg)
+![Solscan Screenshot](/assets/solscan-screenshot-1.jpg)
 
 It's a very powerful website that lets you explore all transactions and accounts on the Solana Blockchain. Indeed, very useful, especially if you want to create powerful actions that can automate on-chain actions like trading bots, etc.
 
@@ -16,7 +16,7 @@ Of course, they generate their revenue by selling a data API that lets you acces
 
 The only problem is the pricing is quite high, as even the cheapest offer starts from $200 per month.
 
-![API pricing screenshot](../assets/Screenshot%202025-03-05%20at%2012.32.51.png)
+![API pricing screenshot](/assets/Screenshot%202025-03-05%20at%2012.32.51.png)
 
 Pretty expensive if you ask me.
 
@@ -38,12 +38,12 @@ This way, they avoid exposing any internal API, avoiding delegating the client's
 
 Of course, this was not the case for Solscan.
 
-![transaction request screenshot](../assets/Screenshot%202025-03-05%20at%2012.50.41.png)
+![transaction request screenshot](/assets/Screenshot%202025-03-05%20at%2012.50.41.png)
 
 As you can see, these endpoints are exactly loading all the transaction data, and take a look at the official documentation of their API:
 
-![transactions endpoint docs example response](../assets/Screenshot%202025-03-05%20at%2012.57.25.png)
-![transactions endpoint docs URL](../assets/Screenshot%202025-03-05%20at%2012.58.23.png)
+![transactions endpoint docs example response](/assets/Screenshot%202025-03-05%20at%2012.57.25.png)
+![transactions endpoint docs URL](/assets/Screenshot%202025-03-05%20at%2012.58.23.png)
 
 Oh... yeah, it's the same.
 
@@ -56,13 +56,13 @@ Now, looking at the request headers, there is one specific header which is obvio
 
 This means that for every request, a new token is generated. Let's take a look at the JavaScript code which generates the request.
 
-![request screenshot](../assets/Screenshot%202025-03-05%20at%2012.54.21.png)
+![request screenshot](/assets/Screenshot%202025-03-05%20at%2012.54.21.png)
 
 We can see that the request is initiated by `_app-0387a288f339cc14.js`. Let's open it and try to search for the string *sol_aut*.
 
 > *"It will be obfuscated for sure, there is no way they left unobfuscated strings inside it."*
 
-![sol-aut code search screenshot](../assets/Screenshot%202025-03-05%20at%2013.10.31.png)
+![sol-aut code search screenshot](/assets/Screenshot%202025-03-05%20at%2013.10.31.png)
 
 Oh... never mind.
 
