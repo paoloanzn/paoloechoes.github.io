@@ -1,4 +1,4 @@
-# Building a Comprehensive Token Minting & Migration (Super)Dashboard
+# Building a Comprehensive Token Minting and Migration (Super)Dashboard
 
 The idea is to have a fairly simple UI which gives you a detail ONE-PAGE(this is important) graphical overview on newly created tokens/migrations from PumpFun.
 
