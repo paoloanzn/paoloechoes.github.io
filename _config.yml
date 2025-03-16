@@ -40,3 +40,5 @@ defaults:
       type: post
     values:
       tags: Other
+
+timezone: "Europe/Rome"
